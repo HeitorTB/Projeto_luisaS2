@@ -90,10 +90,16 @@ a {
 
     .mae {
         grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas muito pequenas */
+        justify-items: center; /* Centraliza os itens da grid */
     }
 
     .mae div {
         font-size: 1.2rem; /* Ajusta o tamanho da fonte dos meses */
         padding: 0.4em; /* Ajusta o padding para melhor visualização */
+    }
+
+    /* Para o último mês, se estiver sozinho */
+    .mae div:last-child {
+        grid-column: span 2; /* Faz o último mês ocupar as duas colunas */
     }
 }
