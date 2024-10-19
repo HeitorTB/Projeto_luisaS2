@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fdf6f8;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.dez {
+    font-family: "Lovers Quarrel", cursive;
+    font-size: 5em;
+}
+
+header p {
+    font-size: 1.3em;
+    padding-bottom: 0.7em;
+}
+
+.his {
+    text-align: center;
+    font-size: 2.2em;
+    margin-top: 1em;
+    color: rgb(235, 72, 99);
+}
+
+main {
+    border-top: 1px solid;
+}
+
+.mae {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 1em;
+}
+
+/* Estilo para cada div de mês */
+.mae div {
+    text-align: center;
+    border: 1.5px solid white;
+    border-radius: 5px;
+    padding: 0.5em;
+    background-color: #d83f87;
+    color: #fff;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Efeito de hover */
+.mae a:hover div {
+    background-color: rgb(252, 106, 130); /* Mudança de cor ao passar o mouse */
+    color: black; /* Mudança da cor do texto */
+    transform: scale(1.05); /* Aumenta o tamanho do elemento */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para efeito de profundidade */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .mae {
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas em telas médias */
+    }
+}
+
+@media (max-width: 480px) {
+    header .dez {
+        font-size: 3em; /* Reduz o tamanho da fonte do título em telas pequenas */
+    }
+
+    header p {
+        font-size: 1.1em; /* Reduz o tamanho da fonte do parágrafo em telas pequenas */
+    }
+
+    .his {
+        font-size: 1.5em; /* Reduz o tamanho da fonte do título "Navegue pela Nossa História" em telas pequenas */
+    }
+
+    .mae {
+        grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
+    }
+}
