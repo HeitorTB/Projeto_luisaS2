@@ -89,6 +89,6 @@ a {
     }
 
     .mae {
-        grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
+        grid-template-columns: 2fr; /* 1 coluna em telas muito pequenas */
     }
 }
