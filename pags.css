@@ -43,24 +43,42 @@ section {
     margin-left: 1px;
 }
 
-/* Ajuste para exibir 2 imagens por linha */
+/* Container para dividir em duas colunas */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Coluna de imagens */
 figure {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start; /* Alinha as imagens à esquerda */
+    width: 60%; /* Ocupa 60% da largura total */
 }
 
 figure div {
-    margin: 10px;
+    width: calc(50% - 10px); /* Garante duas imagens por linha */
+    margin-bottom: 10px;
 }
 
-/* Ajuste para as imagens */
 figure div img {
-    width: 200px;
+    width: 100%;
     height: auto;
 }
 
-/* Responsividade para mobile */
+/* Coluna de texto */
+.text-column {
+    width: 35%; /* Espaço reservado para o texto */
+    padding-left: 20px;
+    border-left: 1px solid #ccc; /* Linha opcional para separar visualmente */
+    font-size: 1.2em;
+    line-height: 1.5em;
+    white-space: pre-wrap; /* Mantém a quebra de linha no poema */
+}
+
+/* Responsividade para telas menores */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.5em;
@@ -77,35 +95,36 @@ figure div img {
     }
 
     header img {
-        width: 150px; /* Reduzir o tamanho do coração em telas menores */
-    }
-
-    /* Ajuste para imagens menores no mobile */
-    figure div img {
         width: 150px;
     }
 
-    /* Deixa as imagens em uma por linha em telas muito pequenas */
     figure {
-        justify-content: space-around;
+        width: 100%; /* Para telas menores, a coluna de imagens ocupa 100% */
     }
 
     figure div {
-        margin: 5px;
+        width: calc(50% - 5px);
+    }
+
+    .text-column {
+        display: none; /* Esconde a coluna de texto em telas menores */
     }
 }
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 2em; /* Diminuir o tamanho da fonte em telas pequenas */
+        font-size: 2em;
     }
 
     header img {
-        width: 120px; /* Reduz ainda mais o ícone de coração em telas muito pequenas */
+        width: 120px;
     }
 
-    /* Reduz mais as imagens em telas pequenas */
-    figure div img {
-        width: 130px;
+    figure div {
+        width: 100%; /* Uma imagem por linha em telas muito pequenas */
+    }
+
+    .text-column {
+        display: none; /* Esconde a coluna de texto em telas muito pequenas */
     }
 }
