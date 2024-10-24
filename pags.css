@@ -9,6 +9,7 @@
 body {
     background-color: #fdf6f8;
     color: #333;
+    font-family: Arial, sans-serif;
 }
 
 header h1 {
@@ -26,11 +27,15 @@ header img {
 
 section {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .dz {
-    margin-left: 18em;
+    margin-left: 20px;
     align-items: center;
+    text-align: center;
 }
 
 .img {
@@ -53,4 +58,54 @@ figure div {
 figure div img {
     width: 200px;
     height: auto;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dz {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    header img {
+        width: 150px;
+    }
+
+    /* Ajuste para imagens menores no mobile */
+    figure div img {
+        width: 150px;
+    }
+
+    /* Deixa as imagens em uma por linha em telas muito pequenas */
+    figure {
+        justify-content: space-around;
+    }
+
+    figure div {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header img {
+        width: 120px;
+    }
+
+    /* Reduz mais as imagens em telas pequenas */
+    figure div img {
+        width: 130px;
+    }
 }
