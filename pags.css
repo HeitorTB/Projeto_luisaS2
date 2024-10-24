@@ -77,7 +77,7 @@ figure div img {
     }
 
     header img {
-        width: 150px;
+        width: 150px; /* Reduzir o tamanho do coração em telas menores */
     }
 
     /* Ajuste para imagens menores no mobile */
@@ -97,11 +97,11 @@ figure div img {
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 2em;
+        font-size: 2em; /* Diminuir o tamanho da fonte em telas pequenas */
     }
 
     header img {
-        width: 120px;
+        width: 120px; /* Reduz ainda mais o ícone de coração em telas muito pequenas */
     }
 
     /* Reduz mais as imagens em telas pequenas */
