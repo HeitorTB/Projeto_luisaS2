@@ -32,17 +32,14 @@ body {
         margin-left: 0;
         text-align: center;
         padding: 10px;
+        background-color: bisque;
+        padding: 1em;
+        margin-bottom: 100em;
+        border: 2px solid black;
+        border-radius: 2em;
     }
 
     body {
         padding: 5px;
     }
-}
-
-.colunatxt{
-    background-color: bisque;
-    padding: 1em;
-    margin-bottom: 100em;
-    border: 2px solid black;
-    border-radius: 2em;
 }
