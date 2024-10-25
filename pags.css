@@ -1,128 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     background-color: #fdf6f8;
     color: #333;
-    font-family: Arial, sans-serif;
-}
-
-header h1 {
-    font-family: "Kaisei Decol", serif;
-    text-align: center; /* Centraliza o título */
-    margin-top: 0.5em;
-    font-size: 4em; /* Aumenta o tamanho do título */
-}
-
-header img {
-    width: 150px;
-    display: block;
-    margin: 0 auto; /* Centraliza a imagem de coração */
+    font-family: 'Kaisei Decol', sans-serif;
+    margin: 0;
     padding: 0;
 }
 
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.dz {
-    align-items: center;
+.dez, .heart {
     text-align: center;
+    margin: 10px 0;
 }
 
-/* Container para dividir em duas colunas */
 .container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px; /* Adiciona espaço em volta */
 }
 
-/* Coluna de imagens */
-figure {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 60%; /* Aumenta a largura da coluna de imagens */
-}
-
-figure div {
-    width: calc(50% - 20px); /* Mantém duas imagens por linha, maiores */
-    margin-bottom: 20px; /* Aumenta o espaçamento entre as imagens */
-}
-
-figure div img {
-    width: 100%; /* Garante que a imagem ocupe toda a largura */
-    height: auto;
-}
-
-/* Coluna de texto */
-.text-column {
-    width: 35%; /* Coluna de texto ao lado das imagens */
-    padding-left: 20px;
-    font-size: 1.3em;
-    line-height: 1.5em;
-    border-left: 2px solid #ccc; /* Linha separadora entre as colunas */
-    white-space: pre-wrap; /* Mantém a quebra de linha do poema */
-}
-
-/* Responsividade para telas menores */
+/* Ajustes para mobile */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 3em; /* Diminui o tamanho do título em telas menores */
-    }
-
-    section {
+    .container {
         flex-direction: column;
         align-items: center;
+        padding: 10px;
     }
 
-    .dz {
+    .colunatxt {
+        margin-left: 0;
         text-align: center;
+        padding: 10px;
     }
 
-    header img {
-        width: 120px;
-    }
-
-    /* Para telas menores, a coluna de imagens ocupa 100% */
-    figure {
-        width: 100%;
-    }
-
-    figure div {
-        width: calc(50% - 10px); /* Ajusta a largura das imagens em telas menores */
-    }
-
-    .text-column {
-        width: 100%; /* O texto também ocupa 100% */
-        border-left: none; /* Remove a linha separadora */
-        margin-top: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 2.5em;
-    }
-
-    header img {
-        width: 100px;
-    }
-
-    figure div {
-        width: 100%; /* Em telas muito pequenas, uma imagem por linha */
-    }
-
-    .text-column {
-        width: 100%; /* O texto ocupa 100% em telas pequenas */
+    body {
+        padding: 5px;
     }
 }
