@@ -17,6 +17,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
 }
 
 /* Ajustes para mobile */
@@ -36,4 +37,12 @@ body {
     body {
         padding: 5px;
     }
+}
+
+.colunatxt{
+    background-color: bisque;
+    padding: 1em;
+    margin-bottom: 100em;
+    border: 2px solid black;
+    border-radius: 2em;
 }
