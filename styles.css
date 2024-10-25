@@ -20,7 +20,7 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 95vh; /* Para garantir que a página ocupe 100% da altura da viewport */
+    min-height: 100vh; /* Para garantir que a página ocupe 100% da altura da viewport */
 }
 
 header {
@@ -116,4 +116,5 @@ footer {
     text-align: center;
     padding: 15px;
     color: white;
+    margin-bottom: 4em;
 }
