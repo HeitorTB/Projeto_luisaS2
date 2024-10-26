@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap');
+
+body {
+    background-color: #fdf6f8;
+    color: #333;
+    font-family: 'Kaisei Decol', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.dez, .heart {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+/* Ajustes para mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .colunatxt {
+        margin-left: 0;
+        text-align: center;
+        padding: 10px;
+        background-color: bisque;
+        padding: 1em;
+        margin-bottom: 100em;
+        border: 2px solid black;
+        border-radius: 2em;
+    }
+
+    body {
+        padding: 5px;
+    }
+}
