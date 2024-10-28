@@ -23,21 +23,18 @@ main p{
     margin-left: 1em;
     margin-right: 1em;
 }
-
-main{
-    border-bottom: 2px solid black;
-}
-
 .colunatxt {
-    margin-left: 0;
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: center;
     padding: 10px;
     background-color: bisque;
     padding: 1em;
-    margin-bottom: 2em;
+    margin-top: 2em;
     border: 2px solid black;
     border-radius: 2em;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 2em;
+    margin-bottom: 2em;
+}
+main{
+    border-bottom: 2px solid black;
 }
